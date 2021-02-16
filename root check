@@ -6,3 +6,12 @@ echo "you need root access"
 echo
 exit 1
 fi
+## check number of processors
+
+if [ `nproc` -eq 1 ]
+then 
+	echo "this server is very small"
+	sleep 10
+	exit 2
+
+fi	
