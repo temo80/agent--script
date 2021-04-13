@@ -17,7 +17,7 @@ pipeline {
          stage('deploy') {
             steps {
                 echo 'Hello deploy'
-                ls
+                
             }
         }
          stage('push') {
